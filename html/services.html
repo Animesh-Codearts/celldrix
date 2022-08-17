@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELLEXIR</title>
+    <link rel="icon" href="images/fav.png"/>
+
+    <!--bootstrap_starts-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--OwlCarousel_starts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <!--font_awesome_starts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--style_css_starts-->
+    <link rel='stylesheet' href="css/style.css"/>
+    <link rel='stylesheet' href="css/responsive.css"/>
+    
+    <!--google_fonts_starts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="menu_ovarlay" id="menu_ovarlay" onclick="mobile_menu_close()" ></div>
+
+    <!--HEADER STARTS-->
+    <div class="top_header_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form_sec_head">
+              <form class="search_form" id="form_on_click" onclick="formclick()">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><img src="images/search_icon.png" alt=""></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="logo_header">
+              <a href=""> <img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="hamberger" onclick="hamclick()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <ul class="social_header">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="header_navs">
+      <div class="container">
+        <div class="nav_full">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">              
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Learn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Podcasts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Maps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New NFTs</a>
+                </li>
+              </ul>
+              <span class="btn_nav">
+                <a class="nav_contact" href="#">CONTACT US NOW</a>   
+              </span>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile_menu_wrapper" id="mobilemenu">
+      <a href="" class="mobile_logo"> <img src="images/logo.png" alt=""></a>
+      <ul class="mobile_main_menu">
+        <li>
+          <a aria-current="page" href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Learn</a>
+        </li>
+        <li>
+          <a href="#">Podcasts</a>
+        </li>
+        <li>
+          <a href="#">Maps</a>
+        </li>
+        <li>
+          <a href="#">Events</a>
+        </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <a href="#">New NFTs</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+      </ul>
+      <ul class="mobile_social">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
+      </ul>
+      
+    </div>
+    <!--HEADER ENDS-->
+
+<!--INNER BANNER STARTS-->
+<div class="inner_banner" style="background-image: url(images/inner_banner.jpg);">
+  <div class="container">
+    <div class="inner_banner_text">
+      <h1>Our <span>Service</span></h1>
+      <ul class="iner_brd">
+        <li><a href="#">home</a></li>
+        <li>Our Service</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--INNER BANNER ENDS-->
+
+<!--SERVICE INNER STARTS-->
+<div class="service_inner">
+  <div class="container">
+    <div class="product_contain">
+      <div class="text_head">
+        <h2><span><img src="images/before_three_line.png" alt="">What We Provide<img src="images/after_three_line.png" alt=""></span></h2>
+      </div>
+      <div class="slide_section">
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">PREP</a></h3>
+                <div class="img_box">
+                  <img src="images/product_1.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">FUEL</a></h3>
+                <div class="img_box">
+                  <img src="images/product_2.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">RECOVER</a></h3>
+                <div class="img_box">
+                  <img src="images/product_3.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">PREP</a></h3>
+                <div class="img_box">
+                  <img src="images/product_1.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">FUEL</a></h3>
+                <div class="img_box">
+                  <img src="images/product_2.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="product_box">
+                <h3><a href="#">RECOVER</a></h3>
+                <div class="img_box">
+                  <img src="images/product_3.jpg" alt=""/>
+                </div>
+                <dv class="para">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+                </dv>
+                <span class="btn_inr_serice">
+                  <a href="#"><span>Read More</span></a>
+                </span>
+              </div>     
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--SERVICE INNER ENDS-->
+
+<!--why_shoose_us_section_inner_starts-->
+<div class="why_shoose_us_section">
+  <div class="container">
+    <div class="text_head">
+      <h2><span><img src="images/before_three_line.png" alt="">Why Choose Us<img src="images/after_three_line.png" alt=""></span></h2>
+    </div>
+      <div class="rai_box_section">
+          <div class="carousel-wrap">
+              <div class="owl-carousel owl-theme whyussection">
+                  <div class="item">
+                      <div class="rai_box_slide">
+                          <div class="icon_box">
+                              <img src="images/abi_1.png" alt="">
+                              <div class="numbr_box">
+                                  <span>01</span>
+                              </div>
+                          </div>
+                          <h3>Choose a service</h3>
+                          <p>Il existe de nombreuses variantes de passages de passages disponibles.</p>
+                      </div>    
+                  </div>
+              
+                  <div class="item">
+                      <div class="rai_box_slide">
+                          <div class="icon_box">
+                              <img src="images/abi_2.png" alt="">
+                              <div class="numbr_box">
+                                  <span>02</span>
+                              </div>
+                          </div>
+                          <h3>Get a free quote</h3>
+                          <p>Il existe de nombreuses variantes de passages de passages disponibles.</p>
+                      </div>    
+                  </div>
+              
+                  <div class="item">
+                      <div class="rai_box_slide">
+                          <div class="icon_box">
+                              <img src="images/abi_3.png" alt="">
+                              <div class="numbr_box">
+                                  <span>03</span>
+                              </div>
+                          </div>
+                          <h3>Get confirmation</h3>
+                          <p>Il existe de nombreuses variantes de passages de passages disponibles.</p>
+                      </div>    
+                  </div>
+              
+                  <div class="item">
+                      <div class="rai_box_slide">
+                          <div class="icon_box">
+                              <img src="images/abi_4.png" alt="">
+                              <div class="numbr_box">
+                                  <span>04</span>
+                              </div>
+                          </div>
+                          <h3>Your job is done!</h3>
+                          <p>Il existe de nombreuses variantes de passages de passages disponibles.</p>
+                      </div>    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--why_shoose_us_section_inner_ends-->
+
+    <!--CONTACT US STARTS-->
+    <div class="contact_us_area inner_contact_us_area">
+      <div class="footer_logo_section">
+        <div class="container">
+          <div class="logo_footer">
+            <img src="images/footer_logo.png" alt="">
+          </div>
+          <div class="logo_text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+          <span class="ftr_logo_btn">
+            <a href="#"><span>FIND OUR MORE</span></a>
+          </span>
+        </div>
+      </div>
+
+      <div class="footer_details" style="background-image: url(images/footer_bg.jpg);">
+        <div class="container">
+          <div class="ftr_details_portion">
+            <div class="subscribe_form">
+              <p>Please send a letter to us, believe that the information promotion will not slip out of hand you</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="details_box">
+                  <h4>INFORMATION</h4>
+                  <ul class="footer_nav">
+                    <li><a href="#">Contact<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="#">Newsletter<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="#">Team<i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="#">Partners<i class="fa-solid fa-angle-right"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="details_box">
+                  <h4>OUR GALLERY</h4>
+                  <ul class="footer_gallery clearfix">
+                    <li><a href="#"><img src="images/ftg_1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftg_2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftg_3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_6.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_7.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_8.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_9.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_10.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/ftr_11.jpg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="details_box">
+                  <h4>CONTACT US</h4>
+                  <ul class="ftr_contact_details">
+                    <li><a href="#"><img src="images/ftr_map.png" alt="">It has survived not only five centuries, but also the leap</a></li>
+                    <li><a href="mailto:info@example.com"><img src="images/footer_mail.png" alt="">info@example.com</a></li>
+                    <li><a href="tel:+123-456-7890"><img src="images/footer_phone.png" alt="">+123-456-7890</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_social">
+        <div class="container">
+          <ul class="social_link">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i><span class="icon_text">Follow on Facebook</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i><span class="icon_text">Follow on Twitter</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i><span class="icon_text">Follow on Pinterest</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i><span class="icon_text">Follow on Google+</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-dribbble"></i><span class="icon_text">Follow on Dribbble</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-rss"></i><span class="icon_text">Follow on RSS</span></a></li>
+            <li><a href="#"><i class="fa-brands fa-vimeo-v"></i><span class="icon_text">Follow on Vimeo</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy_right_section">
+        <p>© 2022 Cellexir All rights reserved.</p>
+      </div>
+    </div>
+    <!--CONTACT US ENDS-->
+
+    
+    <!--jquery_slim_starts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <!--OwlCarousel_js_starts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script src="js/app.js"></script>
+  
+</body>
+</html>
